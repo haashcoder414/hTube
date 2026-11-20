@@ -94,6 +94,7 @@
             
             // CHANGE YOUR PASSWORD HERE:
             const channelOne = "523623"; 
+            const channelTwo = "ilurvgoogoogaga"
             
             const entered = document.getElementById("passwordInput").value;
             
@@ -101,6 +102,10 @@
                 // Saves a temporary pass so index.html knows they logged in
                 sessionStorage.setItem("htube_unlocked", "true");
                 window.location.href = "Channel 1.html";
+             if (entered === channelTwo) {
+                // Saves a temporary pass so index.html knows they logged in
+                sessionStorage.setItem("htube_unlocked", "true");
+                window.location.href = "Channel 2.html";
             } else {
                 document.getElementById("error-msg").style.display = "block";
             }
